@@ -634,3 +634,180 @@ nav h3{
     flex-direction: column;
     gap: 10px;
 }
+/* Adjustments for responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-right {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .search-left, .search-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-right input {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .wel {
+        padding: 0 20px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .cat-left, .cat-right {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .grid-container {
+        margin-top: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3vw;
+    }
+
+    .img-1, .img-9 {
+        background-size: contain;
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .blog-lt, .blog-rt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog-lt {
+        margin-bottom: 20px;
+    }
+
+    .blog-rt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .newsletter, .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .news {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .news-one, .news-two {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .news-two input, .news-two button {
+        width: 100%;
+    }
+
+    .ft-lt, .ft-rt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ft-rt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .paras {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Adjustments for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Define a media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    /* Hide the "Layer 35" and "Layer 36" images */
+    .blog-rt .rt-l,
+    .blog-rt .rt-r {
+        display: none;
+    }
+}
+    .blog {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .blogging {
+        width: 90%;
+    }
+
+    .blog-lt {
+        margin-bottom: 20px;
+    }
+
+    .blog-lt, .blog-rt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog-rt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blog-rt img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-rt button {
+        width: 50%;
+        margin: auto;
+    }
+
+    .rt-l img, .rt-r img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rt-l, .rt-r {
+        width: 100%;
+    }
+}
+
+
+
