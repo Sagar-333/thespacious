@@ -30,6 +30,7 @@ nav{
     transform:scale(1.2);
     color: red;
 }
+.flex,
 .nav-right{
     /* border: 1px solid red; */
     display: flex;
