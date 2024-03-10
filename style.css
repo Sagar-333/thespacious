@@ -687,6 +687,9 @@ nav h3{
         align-items: center;
         margin-top: 20px;
     }
+    .cat-right {
+        display: none;
+      }
 
     .cat-left, .cat-right {
         width: 100%;
@@ -726,7 +729,11 @@ nav h3{
         flex-direction: column;
         gap: 20px;
     }
+    .ourstory {
+        font-size: 16px; /* Adjust the font size as needed for smaller screens */
+    }
 
+    /* Increase font size for headings in smaller screens */
     .newsletter, .footer {
         flex-direction: column;
         align-items: center;
