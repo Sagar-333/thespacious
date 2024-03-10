@@ -828,13 +828,33 @@ nav h3{
 }
 
 /* Media query for small screens */
+/* Media query for small screens */
+/* Media query for small screens */
 @media screen and (max-width: 768px) {
     /* Show hamburger menu button and hide navigation links */
     .hamburger {
         display: block;
+        z-index: 9999; /* Ensure it appears above other elements */
     }
+    /* Add this CSS to your existing style.css file or include it in a <style> tag in your HTML */
+
+    /* Style for the hamburger button */
+    .hamburger {
+        background: transparent; /* Set the background to transparent */
+        border: none; /* Remove the border */
+        cursor: pointer; /* Set cursor to pointer for better user interaction */
+        padding: 0; /* Remove any padding */
+    }
+
+    /* Style for the hamburger icon */
+    .hamburger img {
+        width: 40px; /* Adjust the width of the image as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
     .nav-links {
         display: none;
+        z-index: 9999; /* Ensure it appears above other elements */
     }
     /* Show navigation links when the "active" class is present */
     .nav-links.active {
@@ -845,6 +865,7 @@ nav h3{
         right: 0;
         background-color: #f9f9f9;
         width: 100%;
+        z-index: 9999; /* Ensure it appears above other elements */
     }
     .nav-links.active ul {
         padding: 0;
@@ -856,19 +877,12 @@ nav h3{
         text-decoration: none;
         color: #333; /* Change color to your desired color */
     }
-    /* Set the default flex-direction to row */
-.nav-right ul {
-    display: flex;
-    flex-direction: row;
+    /* Style for vertical layout */
+    .nav-links.vertical ul {
+        flex-direction: column; /* Ensure vertical layout */
+        align-items: center; /* Center the items vertically */
+    }
 }
-
-/* Change flex-direction to column for small screens */
-.nav-right ul.vertical {
-    flex-direction: column;
-}
-
-}
-
 
 
 
